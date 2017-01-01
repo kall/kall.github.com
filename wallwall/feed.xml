@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>월월</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://kall.github.com/wallwall/</link>
+    <atom:link href="http://kall.github.com/wallwall/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 01 Jan 2017 10:45:46 +0000</pubDate>
+    <lastBuildDate>Sun, 01 Jan 2017 10:45:46 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>docker + jekyll로 github 페이지에 블로그 작성</title>
+        <description>&lt;p&gt;새해를 맞아, 소소한 목표 하나.&lt;/p&gt;
+
+&lt;p&gt;거창하게 해봐야 망할게 뻔하니, 쉽게 할 수 있도록 ‘깃헙 페이지 업데이트’까지만 해보기로.&lt;/p&gt;
+
+&lt;p&gt;먼저, 이미 github page는 설정이 되어 있다. 이에 관해서는 다른 좋을글을 먼저 찾아보시라.&lt;/p&gt;
+
+&lt;p&gt;1번, 블로그를 추가해보자.&lt;/p&gt;
+
+&lt;p&gt;깃헙 페이지에 블로그 쓸 때는 이미 대세라는 jekyll을 써보기로 결정. 하지만 지킬은 루비를 깔아야 하는데, 깔기는 귀찮고……&lt;/p&gt;
+
+&lt;p&gt;도커도 한번 써볼겸해서 도커로 해보기로 결정ㅋ&lt;/p&gt;
+
+&lt;p&gt;지킬 도커 이미지가 있는가 찾아봤더니 역시나 있다.
+https://hub.docker.com/r/jekyll/jekyll/&lt;/p&gt;
+
+&lt;p&gt;설치하고&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;docker pull jekyll/jekyll&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;구동해보니 처음 만난 메세지&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;docker run jekyll/jekyll&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Configuration file: none
+            Source: /srv/jekyll
+       Destination: /srv/jekyll/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 0.013 seconds.
+ Auto-regeneration: enabled for '/srv/jekyll'
+Configuration file: none
+    Server address: http://0.0.0.0:4000/
+  Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;일단 디렉토리 연결 옵션 추가로 쉘 실행&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;docker run –rm -it -v /home/kall/kall.github.io:/srv/jekyll jekyll/jekyll:latest /bin/bash&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;그 다음은 그냥 설치한것과 똑같이 사용. /srv/ 디렉토리에서&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;jekyll new wallwall&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;새로 만든 blog(wallwall) 디렉토리에서&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;jekyll server –watch&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;뭔가 뜨는 듯 하지만 접속이 안된다(……)&lt;/p&gt;
+
+&lt;p&gt;포트 포워딩추가;;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;docker run –rm -p 4000:4000 -it -v /home/kall/kall.github.io:/srv/jekyll jekyll/jekyll:latest /bin/bash&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;localhost:4000 으로 접속해보니 뭔가 뜬다. 그 다음은 일반적인 jekyll 사용법대로&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;_config.yml 파일 수정&lt;/li&gt;
+  &lt;li&gt;_blog 디렉토리에 이 글 추가ㅋ&lt;/li&gt;
+  &lt;li&gt;그리고 github page에 배포&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;요약&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;docker pull jekyll/jekyll&lt;/li&gt;
+  &lt;li&gt;docker run –rm -p 4000:4000 -it -v /home/kall/kall.github.io:/srv/jekyll jekyll/jekyll:latest /bin/bash
+    &lt;ul&gt;
+      &lt;li&gt;jekyll new blog&lt;/li&gt;
+      &lt;li&gt;jekyll server –watch&lt;/li&gt;
+      &lt;li&gt;환경수정 &amp;amp; 글쓰기&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 01 Jan 2017 04:56:47 +0000</pubDate>
+        <link>http://kall.github.com/wallwall/2017/01/01/jekyll-init-docker-to-github-pages.html</link>
+        <guid isPermaLink="true">http://kall.github.com/wallwall/2017/01/01/jekyll-init-docker-to-github-pages.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

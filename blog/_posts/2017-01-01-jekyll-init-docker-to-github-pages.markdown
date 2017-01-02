@@ -64,3 +64,10 @@ localhost:4000 으로 접속해보니 뭔가 뜬다. 그 다음은 일반적인 
   - jekyll new blog
   - jekyll server --watch
   - 환경수정 & 글쓰기
+- 배포
+  - jekyll build
+  - git add
+  - git commit
+  - git push
+
+ps. github pages에서 자동으로 jekyll 빌드를 해주지만, 내 경우는 직접 업데이트(..)를 하기 때문에, github page저장소에 .nojekyll 파일을 추가한다. 그래야 빌드가 안깨진다.

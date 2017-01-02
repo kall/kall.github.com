@@ -6,8 +6,8 @@
 </description>
     <link>http://kall.github.com/wallwall/</link>
     <atom:link href="http://kall.github.com/wallwall/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jan 2017 10:45:46 +0000</pubDate>
-    <lastBuildDate>Sun, 01 Jan 2017 10:45:46 +0000</lastBuildDate>
+    <pubDate>Mon, 02 Jan 2017 14:29:03 +0000</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 14:29:03 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -90,7 +90,17 @@ Configuration file: none
       &lt;li&gt;환경수정 &amp;amp; 글쓰기&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;배포
+    &lt;ul&gt;
+      &lt;li&gt;jekyll build&lt;/li&gt;
+      &lt;li&gt;git add&lt;/li&gt;
+      &lt;li&gt;git commit&lt;/li&gt;
+      &lt;li&gt;git push&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;ps. github pages에서 자동으로 jekyll 빌드를 해주지만, 내 경우는 직접 업데이트(..)를 하기 때문에, github page저장소에 .nojekyll 파일을 추가한다. 그래야 빌드가 안깨진다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 01 Jan 2017 04:56:47 +0000</pubDate>
         <link>http://kall.github.com/wallwall/2017/01/01/jekyll-init-docker-to-github-pages.html</link>

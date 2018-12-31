@@ -6,25 +6,35 @@
     <description>Recent content in Tags on 월 월</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:29:34 +0900</lastBuildDate>
     
 	<atom:link href="https://kall.github.io/wallwall/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>블로그</title>
-      <link>https://kall.github.io/wallwall/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</link>
+      <title>Blog</title>
+      <link>https://kall.github.io/wallwall/tags/blog/</link>
       <pubDate>Tue, 01 Jan 2019 00:29:34 +0900</pubDate>
       
-      <guid>https://kall.github.io/wallwall/tags/%EB%B8%94%EB%A1%9C%EA%B7%B8/</guid>
+      <guid>https://kall.github.io/wallwall/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>잡담</title>
-      <link>https://kall.github.io/wallwall/tags/%EC%9E%A1%EB%8B%B4/</link>
+      <title>Hugo</title>
+      <link>https://kall.github.io/wallwall/tags/hugo/</link>
       <pubDate>Tue, 01 Jan 2019 00:29:34 +0900</pubDate>
       
-      <guid>https://kall.github.io/wallwall/tags/%EC%9E%A1%EB%8B%B4/</guid>
+      <guid>https://kall.github.io/wallwall/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trivial</title>
+      <link>https://kall.github.io/wallwall/tags/trivial/</link>
+      <pubDate>Tue, 01 Jan 2019 00:29:34 +0900</pubDate>
+      
+      <guid>https://kall.github.io/wallwall/tags/trivial/</guid>
       <description></description>
     </item>
     

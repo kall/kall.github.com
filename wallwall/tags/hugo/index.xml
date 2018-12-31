@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 월 월</title>
+    <link>https://kall.github.io/wallwall/tags/hugo/</link>
+    <description>Recent content in Hugo on 월 월</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:29:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://kall.github.io/wallwall/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>나도 블로그 할거야</title>
+      <link>https://kall.github.io/wallwall/post/blog-start/</link>
+      <pubDate>Tue, 01 Jan 2019 00:29:34 +0900</pubDate>
+      
+      <guid>https://kall.github.io/wallwall/post/blog-start/</guid>
+      <description>&lt;p&gt;새해를 맞아 블로그를 시작해보기로 했다(새해 효과).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
